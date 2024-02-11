@@ -19,6 +19,7 @@ function App() {
     };
 
     client.onmessage = (e) =>{
+
       setMessages(prevState => [...prevState, e.data]);
 
     }
